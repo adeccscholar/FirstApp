@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+
+#special directories
+__history
+__astcache
+__recovery
+Win32
+Win64
+Release
+Debug
+.vs

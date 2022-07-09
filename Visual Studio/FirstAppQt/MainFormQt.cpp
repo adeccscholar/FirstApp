@@ -1,3 +1,18 @@
+//---------------------------------------------------------------------------
+// Sample application for C++ lecture and assignments.
+// These applications use the library "adecc Scholar" to use text fields in
+// the GUI interface as output stream.
+// Variant for Visual Studio with Qt6 
+// predefine BUILD_WITH_QT
+
+// The project was created with Visual Studio 2019. To use it, Qt6 must also 
+// be installed on the computer. You also need the Visual Studio Addon for Qt.
+
+
+//===========================================================================
+// part to define the techniqual base for the programm
+//===========================================================================
+
 #include <MyForm.h>
 #include <MyStream.h>
 
@@ -8,8 +23,7 @@ TStreamWrapper<Narrow> old_cerr(std::cerr);
 TStreamWrapper<Narrow> old_clog(std::clog);
 
 frmMainQt::frmMainQt(QWidget *parent)
-    : QMainWindow(parent)
-{
+    : QMainWindow(parent) {
     ui.setupUi(this);
 
     ui.statusBar->setLayoutDirection(Qt::LayoutDirection::RightToLeft);
@@ -29,11 +43,18 @@ frmMainQt::frmMainQt(QWidget *parent)
 
     for (auto s : { &std::cout, &std::cerr, &std::clog }) s->setf(std::ios::fixed);
     std::clog << "ready ..." << std::endl;
-}
+   }
 
 frmMainQt::~frmMainQt() {
-}
+   }
 
+//===========================================================================
+//                        Start of the exercise task
+//                       use only C++ from this point
+//===========================================================================
+
+#include <iomanip>
+#include <exception>
 
 void frmMainQt::Action1(void) {
    try {

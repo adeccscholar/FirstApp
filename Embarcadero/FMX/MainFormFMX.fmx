@@ -1,0 +1,93 @@
+object frmMainFMX: TfrmMainFMX
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 594
+  ClientWidth = 1034
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object sbContainer: TStatusBar
+    Position.Y = 572.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 848.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object SbMain: TLabel
+      Position.X = 5.000000000000000000
+      Position.Y = 2.000000000000000000
+      Text = 'SbMain'
+      TabOrder = 0
+    end
+  end
+  object Panel1: TPanel
+    Align = MostRight
+    Position.X = 848.000000000000000000
+    Size.Width = 186.000000000000000000
+    Size.Height = 594.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object btnAction1: TButton
+      Position.X = 32.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'btnAction1'
+      OnClick = btnAction1Click
+    end
+    object btnAction2: TButton
+      Position.X = 32.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'btnAction2'
+      OnClick = btnAction2Click
+    end
+  end
+  object Panel2: TPanel
+    Align = Client
+    Size.Width = 848.000000000000000000
+    Size.Height = 572.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object memOutput: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = Client
+      Size.Width = 848.000000000000000000
+      Size.Height = 439.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Viewport.Width = 844.000000000000000000
+      Viewport.Height = 435.000000000000000000
+    end
+    object memError: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = MostBottom
+      Position.Y = 440.000000000000000000
+      Size.Width = 848.000000000000000000
+      Size.Height = 132.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Viewport.Width = 844.000000000000000000
+      Viewport.Height = 128.000000000000000000
+    end
+    object Splitter1: TSplitter
+      Align = Bottom
+      Cursor = crVSplit
+      MinSize = 20.000000000000000000
+      Position.Y = 439.000000000000000000
+      Size.Width = 848.000000000000000000
+      Size.Height = 1.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+end

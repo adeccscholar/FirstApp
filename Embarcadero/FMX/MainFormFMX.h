@@ -18,8 +18,8 @@ class TfrmMainFMX : public TForm
 __published:	// Von der IDE verwaltete Komponenten
     TStatusBar *sbContainer;
     TLabel *SbMain;
-    TPanel *Panel1;
-    TPanel *Panel2;
+    TPanel *pnlCtrl;
+    TPanel *pnlMain;
     TMemo *memOutput;
     TMemo *memError;
     TSplitter *Splitter1;

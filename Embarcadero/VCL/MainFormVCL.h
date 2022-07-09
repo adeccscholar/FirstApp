@@ -12,7 +12,7 @@
 //---------------------------------------------------------------------------
 
 
-class TfrmMain : public TForm
+class TfrmMainVCL : public TForm
 {
 __published:	// Von der IDE verwaltete Komponenten
     TPanel *pnlCtrl;
@@ -29,9 +29,9 @@ __published:	// Von der IDE verwaltete Komponenten
 private:	// Benutzer-Deklarationen
     int Test(void);
 public:		// Benutzer-Deklarationen
-    __fastcall TfrmMain(TComponent* Owner);
+    __fastcall TfrmMainVCL(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TfrmMain *frmMain;
+extern PACKAGE TfrmMainVCL *frmMainVCL;
 //---------------------------------------------------------------------------
 #endif

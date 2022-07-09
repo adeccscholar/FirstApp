@@ -23,7 +23,7 @@ object frmMainFMX: TfrmMainFMX
       TabOrder = 0
     end
   end
-  object Panel1: TPanel
+  object pnlCtrl: TPanel
     Align = MostRight
     Position.X = 848.000000000000000000
     Size.Width = 186.000000000000000000
@@ -51,7 +51,7 @@ object frmMainFMX: TfrmMainFMX
       OnClick = btnAction2Click
     end
   end
-  object Panel2: TPanel
+  object pnlMain: TPanel
     Align = Client
     Size.Width = 848.000000000000000000
     Size.Height = 572.000000000000000000

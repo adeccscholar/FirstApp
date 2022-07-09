@@ -33,7 +33,7 @@ __fastcall TfrmMainFMX::TfrmMainFMX(TComponent* Owner) : TForm(Owner) {
 //---------------------------------------------------------------------------
 void __fastcall TfrmMainFMX::FormCreate(TObject *Sender) {
    TMyForm frm(this);
-   frm.SetCaption("first app for vcl");
+   frm.SetCaption("first app for fmx");
    frm.GetAsStream<Narrow, EMyFrameworkType::memo>(old_cout, "memOutput");
    frm.GetAsStream<Narrow, EMyFrameworkType::memo>(old_cerr, "memError");
    frm.GetAsStream<Narrow, EMyFrameworkType::statusbar>(old_clog, "sbMain");

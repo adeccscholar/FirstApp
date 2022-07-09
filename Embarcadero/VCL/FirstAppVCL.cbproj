@@ -173,7 +173,7 @@
             <PCH>true</PCH>
         </PCHCompile>
         <CppCompile Include="MainFormVCL.cpp">
-            <Form>frmMain</Form>
+            <Form>frmMainVCL</Form>
             <FormType>dfm</FormType>
             <DependentOn>MainFormVCL.h</DependentOn>
             <BuildOrder>2</BuildOrder>

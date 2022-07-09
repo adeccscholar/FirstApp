@@ -4,7 +4,7 @@
 #pragma hdrstop
 #include <tchar.h>
 //---------------------------------------------------------------------------
-USEFORM("MainFormVCL.cpp", frmMain);
+USEFORM("MainFormVCL.cpp", frmMainVCL);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -12,7 +12,7 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
     {
          Application->Initialize();
          Application->MainFormOnTaskBar = true;
-         Application->CreateForm(__classid(TfrmMain), &frmMain);
+         Application->CreateForm(__classid(TfrmMainVCL), &frmMainVCL);
          Application->Run();
     }
     catch (Exception &exception)

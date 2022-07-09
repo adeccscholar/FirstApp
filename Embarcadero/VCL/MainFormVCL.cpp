@@ -19,18 +19,18 @@
 // part to define the techniqual base for the programm
 //===========================================================================
 
-TfrmMain *frmMain;
+TfrmMainVCL *frmMainVCL;
 
 TStreamWrapper<Narrow> old_cout(std::cout);
 TStreamWrapper<Narrow> old_cerr(std::cerr);
 TStreamWrapper<Narrow> old_clog(std::clog);
 
 //---------------------------------------------------------------------------
-__fastcall TfrmMain::TfrmMain(TComponent* Owner): TForm(Owner) {
+__fastcall TfrmMainVCL::TfrmMainVCL(TComponent* Owner): TForm(Owner) {
    }
 
 //---------------------------------------------------------------------------
-void __fastcall TfrmMain::FormCreate(TObject *Sender) {
+void __fastcall TfrmMainVCL::FormCreate(TObject *Sender) {
    TMyForm frm(this);
    frm.SetCaption("first app for vcl");
    frm.GetAsStream<Narrow, EMyFrameworkType::memo>(old_cout, "memOutput");
@@ -47,9 +47,10 @@ void __fastcall TfrmMain::FormCreate(TObject *Sender) {
 //===========================================================================
 
 #include <iomanip>
+#include <exception>
 
 //---------------------------------------------------------------------------
-void __fastcall TfrmMain::btnActionClick(TObject *Sender) {
+void __fastcall TfrmMainVCL::btnActionClick(TObject *Sender) {
    try {
       std::cout << "first action" << std::endl;
       }
@@ -60,7 +61,7 @@ void __fastcall TfrmMain::btnActionClick(TObject *Sender) {
 
 //---------------------------------------------------------------------------
 
-void __fastcall TfrmMain::btnAction2Click(TObject *Sender) {
+void __fastcall TfrmMainVCL::btnAction2Click(TObject *Sender) {
    try {
       std::cout << "second action" << std::endl;
       }

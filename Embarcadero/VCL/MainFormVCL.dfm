@@ -1,7 +1,7 @@
-object frmMain: TfrmMain
+object frmMainVCL: TfrmMainVCL
   Left = 0
   Top = 0
-  Caption = 'frmMain'
+  Caption = 'frmMainVCL'
   ClientHeight = 1116
   ClientWidth = 2078
   Color = clBtnFace
@@ -24,11 +24,10 @@ object frmMain: TfrmMain
     Margins.Bottom = 6
     Align = alRight
     TabOrder = 0
-    ExplicitHeight = 1116
     object btnAction: TButton
-      Left = 68
+      Left = 51
       Top = 51
-      Width = 207
+      Width = 273
       Height = 52
       Margins.Left = 6
       Margins.Top = 6
@@ -39,9 +38,9 @@ object frmMain: TfrmMain
       OnClick = btnActionClick
     end
     object btnAction2: TButton
-      Left = 68
+      Left = 51
       Top = 115
-      Width = 205
+      Width = 273
       Height = 53
       Margins.Left = 6
       Margins.Top = 6
@@ -63,7 +62,6 @@ object frmMain: TfrmMain
     Margins.Bottom = 6
     Align = alClient
     TabOrder = 1
-    ExplicitHeight = 1116
     object Splitter1: TSplitter
       Left = 1
       Top = 731
@@ -98,7 +96,6 @@ object frmMain: TfrmMain
         'memOutput')
       ParentFont = False
       TabOrder = 0
-      ExplicitHeight = 775
     end
     object memError: TMemo
       Left = 1
@@ -113,7 +110,6 @@ object frmMain: TfrmMain
       Lines.Strings = (
         'memError')
       TabOrder = 1
-      ExplicitTop = 782
     end
   end
   object sbMain: TStatusBar

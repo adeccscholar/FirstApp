@@ -59,17 +59,17 @@ frmMainQt::~frmMainQt() {
 void frmMainQt::Action1(void) {
    try {
       std::cout << "first action" << std::endl;
-   }
+      }
    catch (std::exception& ex) {
       std::cerr << "error: " << ex.what() << std::endl;
+      }
    }
-}
 
 void frmMainQt::Action2(void) {
    try {
       std::cout << "second action" << std::endl;
-   }
+      }
    catch (std::exception& ex) {
       std::cerr << "error: " << ex.what() << std::endl;
+      }
    }
-}
